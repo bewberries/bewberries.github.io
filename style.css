@@ -18,7 +18,7 @@ body {
 }
 
 .info {
-    z-index: 3;
+    z-index: 4;
     display: flex;
     position: absolute;
     width: 25vw;
