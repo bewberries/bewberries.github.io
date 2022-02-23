@@ -1,4 +1,4 @@
-let row = 0;
+let row = 0; 
 let current_id = "";
 let title_id = "";
 let animating = false;
@@ -447,6 +447,7 @@ async function reset() {
     await sleep(300);
     for (let i = 0; i <= 4; i++) {
         document.getElementById("t" + i.toString()).style.animationName = ""; 
+          
     }
 }
 
