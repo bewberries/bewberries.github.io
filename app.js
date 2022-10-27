@@ -13,7 +13,6 @@ function sleep(ms) {
 
 let currentWord = choiceWords[Math.floor(Math.random() * choiceWords.length)];
 document.getElementById("input").focus();
-alert(currentWord);
 
 var elem = document.getElementById("input");
 elem.onkeyup = function(e){
@@ -23,6 +22,7 @@ elem.onkeyup = function(e){
 }
 
 async function getFormData() {
+    alert("CORRECT");
     const form = document.getElementById("wordInput");
     const formData = new FormData(form);
     let word = formData.get("word");
