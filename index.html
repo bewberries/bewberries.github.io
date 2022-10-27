@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="FAVICON.png">
-        <title>WURDL</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="FAVICON.png">
+    <title>WURDL</title>
+</head>
+
 <body onload="reset()">
-     <div class="row"></div>
-     <div class="left"></div>
+    <div class="row"></div>
+    <div class="left"></div>
+
     <div class="middle">
-         <div class="titleBox">
-             <div class="titleLetter" id="t0">W</div>
-             <div class="titleLetter" id="t1">U</div>
-             <div class="titleLetter" id="t2">R</div>
-             <div class="titleLetter" id="t3">D</div>
-             <div class="titleLetter" id="t4">L</div>
-         </div>
+        <div class="titleBox">
+            <div class="titleLetter" id="t0">W</div>
+            <div class="titleLetter" id="t1">U</div>
+            <div class="titleLetter" id="t2">R</div>
+            <div class="titleLetter" id="t3">D</div>
+            <div class="titleLetter" id="t4">L</div>
+        </div>
 
-         <div style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center;">
-             <div class="grid-container">
-                 <div class="grid-item" id="00"></div>
-                 <div class="grid-item" id="01"></div>
-                 <div class="grid-item" id="02"></div>  
-                 <div class="grid-item" id="03"></div>
-                 <div class="grid-item" id="04"></div>
-                 <div class="grid-item" id="10"></div>  
-                 <div class="grid-item" id="11"></div>
-                 <div class="grid-item" id="12"></div>
-                 <div class="grid-item" id="13"></div>  
-                 <div class="grid-item" id="14"></div>  
-                 <div class="grid-item" id="20"></div>  
-                 <div class="grid-item" id="21"></div>  
-                 <div class="grid-item" id="22"></div>  
-                 <div class="grid-item" id="23"></div>  
-                 <div class="grid-item" id="24"></div>  
-                 <div class="grid-item" id="30"></div>  
-                 <div class="grid-item" id="31"></div>  
-                 <div class="grid-item" id="32"></div>  
-                 <div class="grid-item" id="33"></div>  
-                 <div class="grid-item" id="34"></div>  
-                 <div class="grid-item" id="40"></div>  
-                 <div class="grid-item" id="41"></div>  
-                 <div class="grid-item" id="42"></div>  
-                 <div class="grid-item" id="43"></div>  
-                 <div class="grid-item" id="44"></div>  
-                 <div class="grid-item" id="50"></div>  
-                 <div class="grid-item" id="51"></div>  
-                 <div class="grid-item" id="52"></div>  
-                 <div class="grid-item" id="53"></div>  
-                 <div class="grid-item" id="54"></div>  
-             </div>
-         </div>
+        <div style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <div class="grid-container">
+                <div class="grid-item" id="00"></div>
+                <div class="grid-item" id="01"></div>
+                <div class="grid-item" id="02"></div>  
+                <div class="grid-item" id="03"></div>
+                <div class="grid-item" id="04"></div>
+                <div class="grid-item" id="10"></div>  
+                <div class="grid-item" id="11"></div>
+                <div class="grid-item" id="12"></div>
+                <div class="grid-item" id="13"></div>  
+                <div class="grid-item" id="14"></div>  
+                <div class="grid-item" id="20"></div>  
+                <div class="grid-item" id="21"></div>  
+                <div class="grid-item" id="22"></div>  
+                <div class="grid-item" id="23"></div>  
+                <div class="grid-item" id="24"></div>  
+                <div class="grid-item" id="30"></div>  
+                <div class="grid-item" id="31"></div>  
+                <div class="grid-item" id="32"></div>  
+                <div class="grid-item" id="33"></div>  
+                <div class="grid-item" id="34"></div>  
+                <div class="grid-item" id="40"></div>  
+                <div class="grid-item" id="41"></div>  
+                <div class="grid-item" id="42"></div>  
+                <div class="grid-item" id="43"></div>  
+                <div class="grid-item" id="44"></div>  
+                <div class="grid-item" id="50"></div>  
+                <div class="grid-item" id="51"></div>  
+                <div class="grid-item" id="52"></div>  
+                <div class="grid-item" id="53"></div>  
+                <div class="grid-item" id="54"></div>  
+            </div>
+        </div>
 
-         <form class="wordInput" id="wordInput" autocomplete="off">
-             <input class="letterInput" id="input" type="text" name="word" placeholder="Word" display="none"><br> 
-             <input type="submit" style="display: none" onclick="getFormData();return false">
-         </form>
-     </div>
+        <form class="wordInput" id="wordInput" autocomplete="off">
+            <input class="letterInput" id="input" type="text" name="word" placeholder="Word" display="none"><br> 
+            <input type="text" style="display: none"  onkeypress="myFunction(event)">
+        </form>
+    </div>
 
-     </div>
- <script src = 'app.js'></script>
- </body>
- </html>
+    </div>
+<script src = 'app.js'></script>
+</body>
+</html>
