@@ -17,33 +17,7 @@ body {
     height: 100%;
 }
 
-.info {
-    z-index: 3;
-    display: flex;
-    position: absolute;
-    width: 25vw;
-    height: 100vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #5d635f;
-    color: white;
-    font-size: 40px;
-    padding: 15px;
-}
 
-.right {
-    z-index: 3;
-    display: flex;
-    position: absolute;
-    right:0;
-    width: 25vw;
-    height: 100vh;
-    background-color: #5d635f;
-    color: white;
-    font-size: 40px;
-    padding: 15px;
-}
 
 .titleBox {
     position: absolute;
