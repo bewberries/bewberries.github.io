@@ -22,7 +22,6 @@ elem.onkeyup = function(e){
 }
 
 async function getFormData() {
-    alert("CORRECT");
     const form = document.getElementById("wordInput");
     const formData = new FormData(form);
     let word = formData.get("word");
