@@ -10,9 +10,16 @@
 </head>
 
 <body onload="reset()">
-    <div class="row"></div>
-    <div class="left">This is my Wordle clone - Colton Bewley
-    Reworked for Discrete Mathematics Coding Project :)</div>
+
+    <div class="left">
+        <h1>Wordle Clone</h1>
+        <h2>by Colton Bewley</h2>
+        <p>( Reworked for Discrete Mathematics Project )</p>
+        <p> ~This was made using <strong>HTML, CSS, and JavaScript</strong>~ </p>
+        <p> ~The website is hosted using <strong>Github</strong>~ </p>
+        <p> ~The code borrows the word list directly from the Wordle source code~ </p>
+        <p><a href="https://docs.google.com/document/d/1QfMZcOtL5RfJUoib3rW_byPP25yrfX6yTnBkCbp3fe4/edit?usp=sharing" target="_blank"> ~This is a link to a google doc containing the source code</a></p>
+    </div>
 
     <div class="middle">
         <div class="titleBox">
@@ -64,7 +71,29 @@
         </form>
     </div>
 
+    <div class="right">
+        <h1>How to Play</h1>
+
+        <p>- <strong>The goal of the game is to guess a 5 letter word</strong>.</p>
+
+        <p>- Enter a 5 letter word inside the text box under the grid and hit the "enter" key.</p>
+
+        <p>- If the letter turns <span style="color: lightgreen">green</span>, then that <strong>letter is in the word at that exact position</strong>.
+        </p>
+
+        <p>- If a letter turns <span style="color: yellow">yellow</span>, then that <strong>letter is in the word at a different position</strong>.
+        </p>
+
+        <p>- If a letter turns <span style="color: lightgrey">grey</span>, then that <strong>letter is not in the word at all</strong>.
+        </p>
+
+        <p>- You have 6 guesses.</p>
+
+        <p>- To reset, type in "res" and hit the "enter" key. <strong>This will generate a new word</strong>.
+        </p>
+
     </div>
+    
 <script src = 'app.js'></script>
 </body>
 </html>
