@@ -1,23 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {margin: 0; height: 100%; width: 100%; overflow: hidden}
 
 body {
     font-family: 'Montserrat', bold;
     font-style: bold;
-    display: grid;
-    grid-template-columns: auto auto auto;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-color: #5d635f;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.right {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: #5d635f;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
 }
 
 .middle {
-    position: absolute;
+    float: left;
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: rgb(59, 59, 59);
-    width: 100%;
+    width: 40%;
     height: 100%;
 }
-
-
 
 .titleBox {
     position: absolute;
